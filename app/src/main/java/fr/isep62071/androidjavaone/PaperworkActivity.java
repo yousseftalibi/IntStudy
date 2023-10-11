@@ -1,11 +1,19 @@
 package fr.isep62071.androidjavaone;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class PaperworkActivity extends AppCompatActivity {
 
@@ -32,18 +40,30 @@ public class PaperworkActivity extends AppCompatActivity {
         String destination = intent.getStringExtra("DESTINATION");
 
         welcomeText.setText(String.format("Hello, %s,", firstName));
-
         travelInfoText.setText(String.format("You are heading to %s from %s.", destination, nationality));
 
-        String paperworkKey = "paperwork_" + nationality.toLowerCase() + "_" + destination.toLowerCase();
-        String stepsKey = "steps_" + nationality.toLowerCase() + "_" + destination.toLowerCase();
+        String fileName = nationality.toLowerCase() + ".json";
+        AssetManager assetManager = getAssets();
+        InputStream input;
+        String jsonText = "";
+        try {
+            input = assetManager.open(fileName);
+            int size = input.available();
+            byte[] buffer = new byte[size];
+            input.read(buffer);
+            input.close();
+            jsonText = new String(buffer, "UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        int paperworkId = getResources().getIdentifier(paperworkKey, "string", getPackageName());
-        int stepsId = getResources().getIdentifier(stepsKey, "string", getPackageName());
-
-        if (paperworkId != 0 && stepsId != 0) {
-            paperworkText.setText(getString(paperworkId));
-            stepsText.setText(getString(stepsId));
+        try {
+            JSONObject obj = new JSONObject(jsonText);
+            JSONObject destinationObj = obj.getJSONObject(destination.toLowerCase());
+            paperworkText.setText(destinationObj.getString("paperwork"));
+            stepsText.setText(destinationObj.getString("steps"));
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
