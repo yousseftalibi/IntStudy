@@ -23,6 +23,7 @@ public class PaperworkActivity extends AppCompatActivity {
         setContentView(R.layout.activity_paperwork);
 
         Button returnButton = findViewById(R.id.return_button);
+        Button socialLifeButton = findViewById(R.id.see_social_life_button);
         TextView welcomeText = findViewById(R.id.welcomeText);
         TextView travelInfoText = findViewById(R.id.travelInfoText);
         TextView paperworkText = findViewById(R.id.paperworkText);
@@ -30,6 +31,13 @@ public class PaperworkActivity extends AppCompatActivity {
 
         returnButton.setOnClickListener(v -> {
             Intent intent = new Intent(PaperworkActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
+        socialLifeButton.setOnClickListener(v -> {
+            Intent intent = new Intent(PaperworkActivity.this, SocialLifeActivity.class);
+            intent.putExtra("DESTINATION", getIntent().getStringExtra("DESTINATION"));
             startActivity(intent);
             finish();
         });
