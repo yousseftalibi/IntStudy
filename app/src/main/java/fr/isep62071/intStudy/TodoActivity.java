@@ -1,4 +1,4 @@
-package fr.isep62071.androidjavaone;
+package fr.isep62071.intStudy;
 
 
 import android.content.Context;
@@ -15,15 +15,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
-public class RexActivity extends AppCompatActivity {
+public class TodoActivity extends AppCompatActivity {
     private TextView rexInfo;
     private EditText rexGetInfo;
     private Button sendRexButton;
-    // TO DO:
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rex);
+        setContentView(R.layout.activity_todo);
 
         rexInfo = findViewById(R.id.rex_info);
         rexGetInfo = findViewById(R.id.Rex_getInfo);
@@ -32,7 +31,7 @@ public class RexActivity extends AppCompatActivity {
 
 
         returnButton.setOnClickListener(v -> {
-            Intent intent = new Intent(RexActivity.this, MainActivity.class);
+            Intent intent = new Intent(TodoActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
         });
@@ -42,6 +41,7 @@ public class RexActivity extends AppCompatActivity {
             try {
                 writeTextFile(inputText);
                 readAndDisplayTextFile();
+                rexGetInfo.setText("");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

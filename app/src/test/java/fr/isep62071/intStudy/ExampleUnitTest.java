@@ -1,4 +1,4 @@
-package fr.isep62071.androidjavaone;
+package fr.isep62071.intStudy;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package fr.isep62071.androidjavaone;
+package fr.isep62071.intStudy;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,8 +10,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import fr.isep62071.androidjavaone.Weather.WeatherData;
-import fr.isep62071.androidjavaone.Weather.WeatherService;
+import fr.isep62071.intStudy.Weather.WeatherData;
+import fr.isep62071.intStudy.Weather.WeatherService;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -39,7 +39,7 @@ public class SocialLifeActivity extends Activity {
         });
 
         todo_Button.setOnClickListener(v -> {
-            Intent intent = new Intent(SocialLifeActivity.this, RexActivity.class);
+            Intent intent = new Intent(SocialLifeActivity.this, TodoActivity.class);
             startActivity(intent);
             finish();
         });
@@ -65,7 +65,7 @@ public class SocialLifeActivity extends Activity {
             Country_Info.setText("Error reading file!");
         }
 
-        String apiKey = "d089df8ed9d161d9851d856325e022af";
+        String apiKey = "8af7384727f1eabeda4045ef4bd32d4b";
 
         double lat =0;double lon=0;
 

@@ -45,13 +45,14 @@
         android:id="@+id/return_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Return"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:text="Return" />
+
     <Button
         android:id="@+id/see_social_life_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="See social life"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:text="See social life" />
 
 </LinearLayout>

@@ -6,16 +6,7 @@
     <string name="country_of_destination">Country of destination</string>
     <string-array name="nationalities_array">
         <item>Select a nationality</item>
-        <item>Argentina</item>
-        <item>Czech</item>
         <item>France</item>
-        <item>India</item>
-        <item>Latvia</item>
-        <item>Morocco</item>
-        <item>Spain</item>
-        <item>Tunisia</item>
-        <item>Togo</item>
-        <item>Wales</item>
     </string-array>
 
     <string-array name="destination_countries_array">
@@ -25,47 +16,12 @@
         <item>France</item>
         <item>India</item>
         <item>Latvia</item>
-        <item>Morocco</item>
         <item>Spain</item>
         <item>Tunisia</item>
-        <item>Togo</item>
         <item>Wales</item>
     </string-array>
 
-    <string name="visa_needed">Visa is required</string>
-    <string name="visa_not_needed">Visa is not required</string>
-
-
-    <!-- Poland -->
-    <string name="paperwork_poland_argentina">Submit passport only, no visa required for stays under 90 days.</string>
-    <string name="steps_poland_argentina">1. Ensure passport is valid.\n2. Book your flight.\n3. Enter Argentina without a visa.</string>
-    <string name="paperwork_poland_czech">Passport or National ID card required, no visa needed.</string>
-    <string name="steps_poland_czech">1. Ensure document is valid.\n2. Travel to Czech.\n3. No additional steps required.</string>
-    <string name="paperwork_poland_tunisia">Submit passport and obtain visa on arrival for a short stay.</string>
-    <string name="steps_poland_tunisia">1. Ensure passport is valid.\n2. Obtain visa on arrival.\n3. Pay visa fee if applicable.</string>
-    <string name="paperwork_poland_india">Submit passport, e-Visa application, and proof of funds.</string>
-    <string name="steps_poland_india">1. Apply for e-Visa online.\n2. Pay fee.\n3. Receive e-Visa via email.</string>
-
-    <!-- Togo -->
-    <string name="paperwork_togo_argentina">Passport and visa required for all stays.</string>
-    <string name="steps_togo_argentina">1. Apply for a visa.\n2. Submit necessary documentation.\n3. Pay visa fees.\n4. Wait for approval.</string>
-    <string name="paperwork_togo_czech">Passport and Schengen visa required.</string>
-    <string name="steps_togo_czech">1. Apply for a Schengen visa.\n2. Provide supporting documents.\n3. Pay the visa fee.\n4. Attend visa interview if needed.</string>
-    <string name="paperwork_togo_tunisia">Passport and visa required.</string>
-    <string name="steps_togo_tunisia">1. Apply for a visa.\n2. Submit necessary documentation.\n3. Pay visa fees.\n4. Wait for approval.</string>
-    <string name="paperwork_togo_india">Passport, e-Visa, and proof of funds required.</string>
-    <string name="steps_togo_india">1. Apply for e-Visa online.\n2. Pay the e-Visa fee.\n3. Submit supporting documents.\n4. Receive e-Visa via email.</string>
-
-    <!-- Tunisia -->
-    <string name="paperwork_tunisia_argentina">Passport required, visa not required for stays up to 90 days.</string>
-    <string name="steps_tunisia_argentina">1. Have a valid passport.\n2. Show proof of return flight.\n3. Show proof of accommodation and funds.</string>
-    <string name="paperwork_tunisia_czech">Passport and Schengen visa required.</string>
-    <string name="steps_tunisia_czech">1. Apply for a Schengen visa.\n2. Provide supporting documents.\n3. Pay the visa fee.\n4. Attend visa interview if needed.</string>
-    <string name="paperwork_tunisia_tunisia">No documents required for domestic travel.</string>
-    <string name="steps_tunisia_tunisia">No steps needed for domestic travel.</string>
-    <string name="paperwork_tunisia_india">Passport, e-Visa, and proof of funds required.</string>
-    <string name="steps_tunisia_india">1. Apply for e-Visa online.\n2. Pay the e-Visa fee.\n3. Submit supporting documents.\n4. Receive e-Visa via email.</string>
-    <string name="retour_d_exp_rience">Retour d\'expérience</string>
+    <string name="todo_element">TO DO</string>
     <string name="envoyer">Envoyer</string>
 
 </resources>

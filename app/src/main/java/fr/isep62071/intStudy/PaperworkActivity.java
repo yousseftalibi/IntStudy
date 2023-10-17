@@ -1,4 +1,4 @@
-package fr.isep62071.androidjavaone;
+package fr.isep62071.intStudy;
 
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -10,10 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 
 public class PaperworkActivity extends AppCompatActivity {
 

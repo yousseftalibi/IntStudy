@@ -1,4 +1,4 @@
-package fr.isep62071.androidjavaone.Weather;
+package fr.isep62071.intStudy.Weather;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

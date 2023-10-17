@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AndroidJavaOne"
+rootProject.name = "intStudy"
 include(":app")

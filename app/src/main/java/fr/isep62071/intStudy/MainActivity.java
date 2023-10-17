@@ -1,4 +1,4 @@
-package fr.isep62071.androidjavaone;
+package fr.isep62071.intStudy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 

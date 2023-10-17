@@ -1,4 +1,4 @@
-package fr.isep62071.androidjavaone.Weather;
+package fr.isep62071.intStudy.Weather;
 
 import java.util.List;
 

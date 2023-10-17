@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "fr.isep62071.androidjavaone"
+    namespace = "fr.isep62071.intStudy"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "fr.isep62071.androidjavaone"
+        applicationId = "fr.isep62071.intStudy"
         minSdk = 28
         targetSdk = 33
         versionCode = 1
